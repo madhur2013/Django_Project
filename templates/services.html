@@ -1,0 +1,74 @@
+{% extends 'base.html'%}
+{%block title%}services{%endblock title%}
+{% block body%}
+
+<style>
+    .button {
+      background-color: #1c87c9;
+      -webkit-border-radius: 60px;
+      border-radius: 60px;
+      border: none;
+      color: #eeeeee;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 20px;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+    @keyframes glowing {
+      0% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px #2ba805;
+      }
+      50% {
+        background-color: #49e819;
+        box-shadow: 0 0 20px #49e819;
+      }
+      100% {
+        background-color: #2ba805;
+        box-shadow: 0 0 5px #2ba805;
+      }
+    }
+    .button {
+      animation: glowing 1300ms infinite;
+    }
+  </style>
+
+<body>
+  <h2>Select <b>{{ variable }}</b>Ice Cream</h2>
+  <a class="button" href="#">Traditional Kulfi</a>
+  <button type="submit" class="button">Cassata</button>
+</body>
+<body>
+   
+    <a class="button" href="#">Vannila</a>
+    <button type="submit" class="button">Chocochip</button>
+  </body>
+  <body>
+   
+    <a class="button" href="#">Butterscotch</a>
+    <button type="submit" class="button">Pistachio</button>
+  </body>
+<div class="container my-4">
+<img src="https://t3.ftcdn.net/jpg/03/13/00/50/240_F_313005030_6U8MF9Qsya4pG4JeBjsAaYDrrq1ZNp8K.jpg">
+<div class="container">
+    <h2 class="text-right">J'adore ma glace</h2>
+
+   <marquee><img src="https://t3.ftcdn.net/jpg/03/13/00/50/240_F_313005030_6U8MF9Qsya4pG4JeBjsAaYDrrq1ZNp8K.jpg"  ></marquee>
+</div>
+<form method="post" action="/services">
+    {%csrf_token%}
+    <div class="form group">
+        <label for ="name"> Select icecream</label>
+        <input type = "text" class = "form-control" id="name" name="name" placeholder="enter your choice">
+     </div>
+     <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+
+{% endblock body%}
+
+
+       

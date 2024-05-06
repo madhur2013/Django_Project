@@ -1,0 +1,121 @@
+hello dear :)
+ welcome 
+    "don't see my private coding"
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+         <div class="container-fluid">
+           <a class="navbar-brand" href="#">Madhur Ice-Creams</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="/">Home</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/about">About Us</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="/services"> 
+                   Services
+                 </a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="/services">Icecreams</a></li>
+                   <li><a class="dropdown-item" href="/services">Softy</a></li>
+                   <li><hr class="dropdown-divider"></li>
+                   <li><a class="dropdown-item" href="/services">Family- Pack</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/contact">Contact</a>
+               </li>
+             </ul>
+             <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+             </form>
+           </div>
+         </div>
+       </nav>
+       https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D">
+</div>
+TO HTML AAND CSS STYLING*****
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  float: right;
+  border: 1px dotted black;
+  margin: 0px 0px 15px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Let an image float to the right in a paragraph</h2>
+
+<p>In the paragraph below, the image will float to the right. A dotted black border is added to the image. 
+We have also added margins to the image to push the text away from the image:
+0 px margin on the top and right side, 15 px margin on the bottom, and 20 px margin on the left side of the image.
+</p>
+
+<p><img src="w3css.gif" width="100" height="140">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+</body>
+</html>
+FOR GLOWING BUTTONS**************
+<style>
+      .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+      .button {
+        animation: glowing 1300ms infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Create flashing/glowing button</h2>
+    <a class="button" href="#">Click here!</a>
+    <button type="submit" class="button">Click here!</button>
+  </body>
+</html>
